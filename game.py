@@ -1,6 +1,11 @@
-human_turn = 'rock'
-computer_turn = 'scissors'
+import random
+turns = ['rock', 'paper' , 'scissors']
 
+while(True) :
+ human_turn = input("Enter your turn")
+human_turn = 'rock'
+computer_turn = random.choice(turns)
+print(f'{human_turn} vs. computer:{computer_turn}')
 if human_turn == computer_turn:
     print('Draw!')
 elif human_turn == 'rock' and computer_turn == 'scissors':
